@@ -52,20 +52,18 @@ for column in excel_data['Contact'].tolist():
         + '&text=' + excel_data['Message'][0]
         sent = False
         # It tries 3 times to send a message in case if there any error occurred
-        for i in range(3):
-            if not sent:
-                driver.get(url)
-                try:
-                    click_btn = WebDriverWait(driver, 35).until(
-                        EC.element_to_be_clickable((By.CLASS_NAME, '_1E0Oz')))
-                except Exception as e:
-                    print("Sorry message could not sent. Press enter to retry.")
-                else:
-                    sleep(1)
-                    click_btn.click()
-                    sent = True
-                    sleep(3)
-                    print('Message sent to: ' + str(excel_data['Contact'][count]))
+        driver.get(url)
+        try:
+            click_btn = WebDriverWait(driver, 35).until(
+                EC.element_to_be_clickable((By.CLASS_NAME, '_1E0Oz')))
+        except Exception as e:
+            print("Sorry message could not sent to " + str(excel_data['Contact'][count]))
+        else:
+            sleep(2)
+            click_btn.click()
+            sent = True
+            sleep(5)
+            print('Message sent to: ' + str(excel_data['Contact'][count]))
         count = count + 1
     except Exception as e:
         print('Failed to send message to ' + str(excel_data['Contact'][count]) + str(e))
