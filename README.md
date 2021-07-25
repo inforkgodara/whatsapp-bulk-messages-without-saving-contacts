@@ -58,7 +58,7 @@ for column in excel_data['Contact'].tolist():
         driver.get(url)
         try:
             click_btn = WebDriverWait(driver, 35).until(
-                EC.element_to_be_clickable((By.CLASS_NAME, '_1E0Oz')))
+                EC.element_to_be_clickable((By.CLASS_NAME, '_4sWnG')))
         except Exception as e:
             print("Sorry message could not sent to " + str(excel_data['Contact'][count]))
         else:
