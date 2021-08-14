@@ -73,6 +73,6 @@ for column in excel_data['Contact'].tolist():
 driver.quit()
 print("The script executed successfully.")
 ```
-Note: The script may not work in case if the HTML of web WhatsApp is changed. If you face any problem please do let me know. Surely I will help you out.
+Note: The script may not work in case if the HTML of web WhatsApp is changed. If you face any problem please do let me know. Surely I will help you out. You can expect response on weekend only others days extremely busy with my routine activities.
 
 Find it on youtube. https://youtu.be/KBe26Kk5d9c
