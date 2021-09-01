@@ -17,6 +17,7 @@ In order to run the python script, your system must have the following programs/
 * Xlrd : Run in command prompt **pip install xlrd**
 * Selenium: Run in command prompt **pip install selenium** 
 * Web Driver: Run in command prompt **pip install webdriver_manager**
+* Openpyxl: Run in command prompt **pip install openpyxl**
 
 ## Approach
 * First need to clone this respiratory
