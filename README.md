@@ -17,6 +17,7 @@ In order to run the python script, your system must have the following programs/
 * Xlrd : Run in command prompt **pip install xlrd**
 * Selenium: Run in command prompt **pip install selenium** 
 * Web Driver: Run in command prompt **pip install webdriver_manager**
+* Openpyxl: Run in command prompt **pip install openpyxl**
 
 ## Approach
 * First need to clone this respiratory
@@ -77,5 +78,3 @@ driver.quit()
 print("The script executed successfully.")
 ```
 Note: The script may not work in case if the HTML of web WhatsApp is changed. If you face any problem please do let me know. Surely I will help you out. You can expect response on weekend only others days extremely busy with my routine activities.
-
-Find it on youtube. https://youtu.be/KBe26Kk5d9c
