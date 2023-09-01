@@ -26,7 +26,10 @@ In order to run the python script, your system must have the following programs/
 * Once all the message will be sent chrome driver will automatically closed.
 
 Note: If you wish to send an image instead of text you can write attachment selection python code.
-
+## FIX
+If you encounter that have an error for chrome driver, install [chromedriver](https://googlechromelabs.github.io/chrome-for-testing/)
+and add 'service = Service(executable_path='chromedriver.exe')
+driver = webdriver.Chrome(service=service)'
 ## Legal
 * This code is in no way affiliated with, authorized, maintained, sponsored or endorsed by WhatsApp or any of its affiliates or subsidiaries. This is an independent and unofficial software. Use at your own risk. Commercial use of this code/repo is strictly prohibited.
 
