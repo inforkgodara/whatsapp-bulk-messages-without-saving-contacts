@@ -18,13 +18,13 @@ driver.get('https://web.whatsapp.com')
 input("Press ENTER after login into Whatsapp Web and your chats are visiable.")
 for column in excel_data['Contact'].tolist():
     try:
-        url = 'https://web.whatsapp.com/send?phone=' + str(excel_data['Contact'][count]) + '&text=' + excel_data['Message'][0]
+        url = 'https://web.whatsapp.com/send?phone={}&text={}'.format(excel_data['Contact'][count], excel_data['Message'][0])
         sent = False
         # It tries 3 times to send a message in case if there any error occurred
         driver.get(url)
         try:
             click_btn = WebDriverWait(driver, 35).until(
-                EC.element_to_be_clickable((By.CLASS_NAME, '_4sWnG')))
+                EC.element_to_be_clickable((By.CLASS_NAME, '_1Ae7k')))
         except Exception as e:
             print("Sorry message could not sent to " + str(excel_data['Contact'][count]))
         else:
