@@ -7,7 +7,7 @@ It is a python script that sends WhatsApp message automatically from WhatsApp we
 
 ## Prerequisites
 
-In order to run the python script, your system must have the following programs/packages installed and the contact number should be saved in your phone (You can use bulk contact number saving procedure of email). There is a way without saving the contact number but has the limitation to send the attachment.
+In order to run the python script, your system must have the following programs/packages installed and the contact number not need to be saved in your phone (You can use bulk contact number saving procedure of email). It has limitation of sending attachment but you can refer to my another repo which has functionality to send document file like pdf, image, etc.
 * Python 3.8: Download it from https://www.python.org/downloads
 * Chrome v79: Download it from https://chrome.google.com
 * Pandas : Run in command prompt **pip install pandas**
